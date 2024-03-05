@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Linq;
 using PracticaProgramada_Grupo3.Models; 
 using System;
 using System.Diagnostics;
-using Microsoft.EntityFrameworkCore;
+
 
 namespace PracticaProgramada_Grupo3.Controllers
 {
