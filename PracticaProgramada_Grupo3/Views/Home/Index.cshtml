@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Log in";
+}
+
+<div class="form-container">
+    <div class="form-container__tabs">
+        <button class="form-container__tab form-container__tab--active" id="login-tab">
+            Iniciar Sesión
+        </button>
+        <button class="form-container__tab" id="register-tab">
+            Registrar
+        </button>
+    </div>
+
+    @* Para el formulario de inicio de sesión *@
+    <form asp-action="Login" asp-controller="Account" method="post" id="login-form" class="form-container__form form-container__form--active">
+        <div class="form-container__field">
+            <label for="login-username" class="form-container__label">Nombre de Usuario</label>
+            <input type="text" id="login-username" name="username" class="form-container__input" required />
+        </div>
+        <div class="form-container__field">
+            <label for="login-password" class="form-container__label">Contraseña</label>
+            <input type="password" id="login-password" name="password" class="form-container__input" required />
+        </div>
+        <button type="submit" class="form-container__button">
+            Iniciar Sesión
+        </button>
+    </form>
+
+    @* Para el formulario de registro *@
+    <form asp-action="Register" asp-controller="Account" method="post" id="register-form" class="form-container__form" enctype="multipart/form-data">
+        <div class="form-container__field">
+            <label for="register-username" class="form-container__label">Nombre de Usuario</label>
+            <input type="text" id="register-username" name="Usuario" class="form-container__input" required />
+        </div>
+        <div class="form-container__field">
+            <label for="register-password" class="form-container__label">Contraseña</label>
+            <input type="password" id="register-password" name="password" class="form-container__input" required />
+        </div>
+        <div class="form-container__field">
+            <label for="profileImage" class="form-container__label">Foto de Perfil</label>
+            <input type="file" id="profileImage" name="ProfileImage" class="form-container__input" />
+        </div>
+        <button type="submit" class="form-container__button">
+            Registrar
+        </button>
+    </form>
+</div>

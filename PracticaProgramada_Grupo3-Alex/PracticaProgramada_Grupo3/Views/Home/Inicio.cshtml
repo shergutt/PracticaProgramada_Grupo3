@@ -1,0 +1,20 @@
+﻿@using Microsoft.EntityFrameworkCore
+
+@{
+    ViewData["Title"] = "Home";
+    var username = Context.Session.GetString("Username");
+    var userId = Context.Session.GetInt32("UserID");
+}
+
+
+<div>
+    @if (username != null)
+    {
+        <h1>Bienvenido, @username , @userId</h1>
+    }
+    else
+    {
+        <p>Bienvenido, invitado</p>
+    }
+</div>
+

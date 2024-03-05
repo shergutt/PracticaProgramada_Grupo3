@@ -1,0 +1,28 @@
+﻿
+@model IEnumerable<PracticaProgramada_Grupo3.Models.Game>
+
+<<h2>Historial de Juegos</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID del Juego</th>
+            <th>ID del Usuario</th>
+            <th>Resultado</th>
+            <th>Duración del Juego</th>
+            <th>Fecha del Juego</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var game in Model)
+        {
+            <tr>
+                <td>@game.GameId</td>
+                <td>@game.UserId</td>
+                <td>@game.Result</td>
+                <td>@game.GameDuration</td>
+                <td>@game.DatePlayed.ToString("g")</td>
+            </tr>
+        }
+    </tbody>
+</table>

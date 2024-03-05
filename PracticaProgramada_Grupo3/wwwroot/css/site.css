@@ -1,0 +1,220 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+ 
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main-content {
+    flex: 1;
+    height: 100%;
+}
+
+.form-container {
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    margin: 150px auto;
+    border: 1px solid #000;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'SF-Pro', sans-serif;
+    border-radius:20px;
+}
+
+.form-container__tabs {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+}
+
+.form-container__tab {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+}
+
+.form-container__tab--active {
+    border-bottom: 2px solid #000;
+    border-radius:5px;
+}
+
+
+.form-container__form {
+    display: none;
+    padding: 20px;
+}
+
+.form-container__form--active {
+    display: block;
+}
+
+.form-container__field {
+    margin-bottom: 20px;
+}
+
+.form-container__label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-container__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius:5px;
+}
+
+.form-container__button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius:5px;
+}
+
+.flex-row {
+    flex-direction: row !important;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding:10px;
+}
+
+.header__container {
+    position: relative;
+    height: 45px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 9px 16px 0px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section {
+    text-align: center;
+    background-color: #ebebeb;
+    padding: 20px;
+}
+
+.cell {
+    font-family: "Courier New", monospace;
+    width: 100px;
+    height: 100px;
+    box-shadow: none;
+    border: 4px solid black;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+    background-color: #ffffff;
+    color: black;
+}
+
+.game--title {
+    font-size: 100px;
+    color: black;
+    margin: 10px auto;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 5px;
+    border: 5px solid black;
+}
+
+.game--status {
+    font-size: 50px;
+    color: black;
+    margin: 20px auto;
+    font-family: "Courier New", monospace;
+}
+
+.game--restart {
+    background-color: #a0a0a0;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    color: black;
+    border: 3px solid black;
+    font-family: "Courier New", monospace;
+}
+
+    .game--restart:hover {
+        background-color: #c0c0c0;
+    }
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Courier New", monospace; 
+    background-color: #ebebeb;
+}
+
+th, td {
+    border: 2px solid black; 
+    padding: 8px; 
+    text-align: left;
+}
+
+th {
+    background-color: #a0a0a0;
+    color: black;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; 
+}
+
+tbody tr:hover {
+    background-color: #c0c0c0;
+}
+
+thead {
+    font-family: "Arial Black", Gadget, sans-serif; 
+}
